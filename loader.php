@@ -8,7 +8,6 @@ Version: 1.0
 Author URI: https://www.linkedin.com/in/madhvendras84/
 */
 
-
 add_action('wp_head', function(){
 ?>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:600|Playfair+Display:900|Quattrocento+Sans:regular|Karla:700" rel="stylesheet" type="text/css"/>
