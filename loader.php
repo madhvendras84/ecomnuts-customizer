@@ -31,3 +31,11 @@ src: url('http://ecomnuts.com/bethany/wp-content/uploads/2020/05/modenascript-re
 </style>
 <?php
 }, 999);
+
+// disbale essential elementor plugin from update to prevent the loss
+
+function disable_plugin_updates( $value ) {
+   unset( $value->response['essential-addons-for-elementor-lite/essential_adons_elementor.php'] );
+   return $value;
+}
+add_filter( 'site_transient_update_plugins', 'disable_plugin_updates' );
